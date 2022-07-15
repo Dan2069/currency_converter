@@ -9,7 +9,12 @@
 <body>
     <p>Convert Currencies!</p>
 
-    <form action="/convert">
+    {% for msg in get_flashed_messages() %}
+    <p>{{msg}}</p>
+    {% endfor %}
+
+
+    <form action="/convert" method="POST">
         <label for="convert-from">Convert from</label><br>
         <input type="text" placeholder="Ex. USD" name="convert_from"><br>
 
