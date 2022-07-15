@@ -6,10 +6,11 @@ button {
 }
 
 p {
-    background-color: orange;
+    background-color: #7AB9ED;
     color: white;
     border-color: black;
     border: 15px;
-    margin: 20px;
+    margin: 30px;
+    width: 500px;
 
 }

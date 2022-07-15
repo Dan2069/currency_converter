@@ -9,6 +9,7 @@ from forex_python.converter import CurrencyRates, CurrencyCodes
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = "secret"
+app.config['DEBUG_TB_INTERCEPT_REDIRECTS'] = False
 
 debug = DebugToolbarExtension(app)
 
@@ -71,9 +72,6 @@ def show_convert_page():
 
         return render_template("convert.html", convert_from=convert_from, convert_to=convert_to, amount=amount, new_amount=new_amount, convert_from_symbol=convert_from_symbol, convert_to_symbol=convert_to_symbol)
 
-
-## Decorate???
-## At least make the form and button look neater/clean
-## Make the button blue w/ White Font, rounded edges
-## Font Style?
-## Should i make selected form input have a thick gray border to indicated that it's being selected???
+## Should i make it more pretty?
+## Answer Conceptual Questions
+## Write tests for my routes and functions
