@@ -1,0 +1,15 @@
+button {
+    background-color: #2185D9;
+    color: white;
+    border-color: black;
+    border-radius: .5rem;
+}
+
+p {
+    background-color: orange;
+    color: white;
+    border-color: black;
+    border: 15px;
+    margin: 20px;
+
+}
